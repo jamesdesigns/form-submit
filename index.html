@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submit Challenge</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <img class="center img-size pad-top-15" src="img/logo.png" alt="W3C SVG" />
+  </nav>
+  <section>
+    <header>
+      <h1 class="pad-btm-30 blue-txt top-vert-align">Please enter the following information</h1>
+    </header>
+    <form action="">
+      <div class="form-field-container">
+        <div class="row pad-top-20">
+          <label class="pad-right-10" for="ssn">ssn (last 4) xxx-xx- </label><br>
+          <input 
+            type="text" 
+            id="ssn" 
+            name="ssn" 
+            onfocus="if(this.value==this.defaultValue)this.value=''" 
+            onblur="if(this.value=='')this.value=this.defaultValue"
+            value="xxxx" 
+            minlength="4" 
+            maxlength="4" 
+            required
+          >
+          <br>
+        </div>
+        <div class="row">   
+          <label class="pad-right-10" for="dob">date of birth </label><br>
+          <input 
+            type="date" 
+            id="dateOfBirth" 
+            name="dateOfBirth" 
+            value="mm/dd/yyyy" 
+            required
+          >
+          <br><br>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn-submit" onclick="showUserData()" type="button">SUBMIT</button>
+      </div>  
+    </form> 
+  </section>  
+  <script src="script.js"></script>
+</body>
+</html>

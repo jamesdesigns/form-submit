@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Text, Padding, and Margins */
+.blue-txt { color: #2b63a0; }
+.pad-right-10 { padding-right: 10px; }
+.pad-top-15 { padding-top: 15px; }
+.pad-top-20 { padding-top: 20px; }
+.pad-btm-30 { padding-bottom: 30px; }
+.top-vert-align { margin-top: -15px; padding-bottom: 50px; }
+
+
+body { 
+  background-color: #f1f2f3; 
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 { font-size: 38px; font-weight: bold; }
+
+
+/* Top Navigation with Image Only */
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: -1px 0px 18px -3px rgba(0,0,0,0.2);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form Section */
+section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: -2px 4px 23px -13px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 4px 23px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 4px 23px -13px rgba(0,0,0,0.75);
+}
+
+header {
+  background-color: white;
+  border-bottom: 2px solid #E8E8E8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 100px;
+  padding: 30px 10px 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+form {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 1px 5px 23px -16px rgba(0,0,0,0.22) inset;
+  -webkit-box-shadow: 1px 5px 23px -16px rgba(0,0,0,0.22) inset;
+  -moz-box-shadow: 1px 5px 23px -16px rgba(0,0,0,0.22) inset;
+}
+
+.form-field-container { margin-right: 5.75rem; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+label {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #A9A9A9;
+}
+
+input[type=text] {
+  width: 60%;
+  color: #ccc;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 6px 20px 6px 10px;
+  margin-bottom: 13px;
+}
+
+input[type=text]:focus
+ {
+  color: black;
+}
+
+input#dateOfBirth:focus {
+  color: black;
+}
+
+#ssn { 
+  margin-top: -10px;
+  width: 100%;
+}
+
+#ssn:active {
+  color: black;
+}
+
+#dateOfBirth {
+  width: 100%;
+  margin-top: -10px;
+  color: #ccc;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 4px 0 4px 10px;
+  margin-bottom: 13px;
+}
+
+.btn-submit {
+  border-radius: 25px;
+  background-color: #edf0ed;
+  padding: 10px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin: 40px 10px 15px 0;
+  box-shadow: -1px 5px 0px 0px rgba(0,0,0,0.1); 
+  outline: 0;
+}
+
+.btn-submit:active,
+.btn-submit:hover {
+  color: white;
+  background-color: #a8c369;
+  box-shadow: -1px 5px 0px 0px rgba(0,0,0,0.5); 
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px0) {
+  section { 
+    width: 95%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  input[type=text] {
+    width: 100%;
+  }
+
+  #dateOfBirth {
+    width: 60%;
+  }
+
+  .btn-submit { 
+    margin-top: -20px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media only screen and  (min-width: 768px) { 
+  section { 
+    width: 95%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  #ssn { width: 60%; }
+
+  #dateOfBirth {
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media only screen and (min-width: 992px) { 
+  section { 
+    width: 80%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  #dateOfBirth {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px) { 
+  section { 
+    width: 60%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  #dateOfBirth {
+    width: 60%;
+  }
+ }
